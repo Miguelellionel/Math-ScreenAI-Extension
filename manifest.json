@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Math AI Agent",
+  "version": "1.1",
+  "description": "Scans your screen, finds math, and tells you the answer.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Scan Screen for Math"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
